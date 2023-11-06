@@ -16,17 +16,20 @@
   <meta name="author" content="Yomi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="使用Hexo搭建个人博客，并通过SSH连接Github。 配置环境安装node.js 安装git 安装hexo 在命令行中输入  1npm install -g hexo-cli  安装后 使用hexo -v 出现版本号确认安装成功 *报错： 解决方法 打开设置-隐私和安全性-开发者选项-PowerShell 将该选项打开 创建仓库在Github中创建仓库 仓库名必须为 用户名.gihub.io">
+    <meta name="description" content="使用Hexo搭建个人博客，并通过SSH连接Github。 配置环境安装node.js 安装git 安装hexo 在命令行中输入  1npm install -g hexo-cli  安装后 使用hexo -v 出现版本号确认安装成功 *报错：   解决方法 打开设置-隐私和安全性-开发者选项-PowerShell 将该选项打开   创建仓库在Github中创建仓库 仓库名必须为 用户名.gihub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Hexo+Github制作个人博客">
 <meta property="og:url" content="http://example.com/2023/11/06/%E4%BD%BF%E7%94%A8Hexo-Github%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Yomi的主页">
-<meta property="og:description" content="使用Hexo搭建个人博客，并通过SSH连接Github。 配置环境安装node.js 安装git 安装hexo 在命令行中输入  1npm install -g hexo-cli  安装后 使用hexo -v 出现版本号确认安装成功 *报错： 解决方法 打开设置-隐私和安全性-开发者选项-PowerShell 将该选项打开 创建仓库在Github中创建仓库 仓库名必须为 用户名.gihub.io">
+<meta property="og:description" content="使用Hexo搭建个人博客，并通过SSH连接Github。 配置环境安装node.js 安装git 安装hexo 在命令行中输入  1npm install -g hexo-cli  安装后 使用hexo -v 出现版本号确认安装成功 *报错：   解决方法 打开设置-隐私和安全性-开发者选项-PowerShell 将该选项打开   创建仓库在Github中创建仓库 仓库名必须为 用户名.gihub">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/11/06/%E4%BD%BF%E7%94%A8Hexo-Github%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20231106230252.png">
+<meta property="og:image" content="http://example.com/2023/11/06/%E4%BD%BF%E7%94%A8Hexo-Github%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20231106230315.png">
 <meta property="article:published_time" content="2023-11-06T14:20:31.000Z">
-<meta property="article:modified_time" content="2023-11-06T14:36:05.760Z">
+<meta property="article:modified_time" content="2023-11-06T15:05:26.425Z">
 <meta property="article:author" content="Yomi">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/2023/11/06/%E4%BD%BF%E7%94%A8Hexo-Github%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20231106230252.png">
   
   
   
@@ -281,7 +284,11 @@
 
 <p>安装后 使用<code>hexo -v</code> 出现版本号确认安装成功</p>
 <p>*报错：</p>
+
+
 <p>解决方法 打开设置-隐私和安全性-开发者选项-PowerShell 将该选项打开</p>
+
+
 <h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>在Github中创建仓库</p>
 <p>仓库名必须为 <code>用户名.gihub.io</code></p>
 <p>创建一个index.html文件作为网站主页</p>
@@ -340,7 +347,11 @@
 </li>
 <li><p>建立blog和Github的连接</p>
 <p>创建SSH密钥，按如图所示的方式操作</p>
+<img src="/2023/11/06/%E4%BD%BF%E7%94%A8Hexo-Github%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20231106230252.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>设置密钥名称，并将上一步骤复制的公钥粘贴至此处</p>
+<img src="/2023/11/06/%E4%BD%BF%E7%94%A8Hexo-Github%E5%88%B6%E4%BD%9C%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/20231106230315.png" srcset="/img/loading.gif" lazyload class="">
+
 <p>点击Add SSH key生成密钥</p>
 <p>在SSH文件夹中打开Git Bash输入如下内容，显示Successful相关即表示成功</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">ssh</span> -T git<span class="hljs-variable">@github</span>.com<br></code></pre></td></tr></table></figure>
